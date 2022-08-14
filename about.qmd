@@ -1,0 +1,9 @@
+---
+title: "About"
+---
+
+Sample size calculation is one of the most frequent problems faced by students, early career researchers and senior academics undertaking research. I decided to put the resources I usually use to help resolving issues related to sample size calculation in one place so that I can find them easily whenever I need them.
+
+## Author: A Pathmeswaran  
+Public health academic attached to the University of Kelaniya, Sri Lanka.  
+Email: pathmes@kln.ac.lk
