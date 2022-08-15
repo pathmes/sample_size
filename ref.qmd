@@ -1,11 +1,11 @@
 ---
-title: "References"
+title: "Background"
 bibliography: references.bib
 ---
 
 ## Study Designs
 
-We adopt an appropriate study design based on the objective of the research project. We may be interested in either determining a quantity ( a mean value or a percentage) or determining associations (between an exposure and an outcome). A good starting point to read up on study designs in the first article is a series of articles published in the Lancet [@grimes2002].
+We adopt an appropriate study design based on the objective of the research project. We may be interested in either determining a quantity (a mean value or a percentage) or determining associations (between an exposure and an outcome). A good starting point to read up on study designs in the first article is a series of articles published in the Lancet [@grimes2002].
 
 ## Standard Error
 
