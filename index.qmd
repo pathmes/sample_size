@@ -2,7 +2,10 @@
 title: "Introduction"
 ---
 
-We need to decide on a sample size before we start collecting data for a research project otherwise we will not know when to stop collecting data. We could either pick a number arbitrarily as the sample size or formally calculate it. An inadequate sample size will result in inconclusive results and an unnecessarily large sample size is a waste of resources. Therefore, a formal sample size calculation is essential for almost all projects.
+We need to decide on a sample size before we start collecting data for a research project otherwise, we will not know when to stop collecting data! We could either pick a number arbitrarily as the sample size or formally calculate it. An inadequate sample size will result in inconclusive results and unnecessarily large sample size is a waste of resources. Therefore, a formal sample size calculation is essential for almost all research projects.
 
 \
 A basic understanding of the ideas and concepts such as study designs, standard error, confidence interval, type 1 and type II error (or significance level and power) will make it easy to understand the ideas behind sample size calculation.
+
+\
+Sample size calculation becomes an easy process once you are clear about these concepts.  
