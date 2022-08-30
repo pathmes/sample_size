@@ -71,7 +71,7 @@ $$N = \frac{1.96^2 * p(100-p)}{d^2}$$
     -   80%
     -   90%
 
-## Analytical study - Numeric outcome {.scrollable}
+## Analytical study - Numeric outcome {.smaller}
 
 -   Required information
     1.  Expected difference/ effect size (d)
@@ -156,9 +156,11 @@ as_raw_html()
 | 500   | 10    | 500   | 20    | 96%   |
 | 900   | 10    | 100   | 20    | 81%   |
 
-[](https://www.openepi.com/Menu/OE_Menu.htm)
 
-## Power and sample size 
+[OpenEpi](https://www.openepi.com/Menu/OE_Menu.htm)
+
+## Power and sample size
+
 (Sig = 0.05, P~1~ = 0.15 & p~2~ = 0.1)
 
 ```{r}
@@ -175,7 +177,8 @@ plot(p.2p)
 
 ```
 
-## Power and sample size 
+## Power and sample size
+
 (Sig = 0.01, P~1~ = 0.15 & p~2~ = 0.1)
 
 ```{r}
@@ -192,8 +195,8 @@ plot(p.2p)
 
 ```
 
+## Power and sample size
 
-## Power and sample size 
 (P~1~ = 0.5 & p~2~ = 0.42)
 
 ```{r}
