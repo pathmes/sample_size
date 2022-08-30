@@ -1,0 +1,211 @@
+---
+title: "Sample Size Calculation"
+author: "Prof A Pathmeswaran<br>pathmes@kln.ac.lk<br>2022-08-30"
+format: 
+  revealjs:
+   theme: "simple"
+   self-contained: true
+---
+
+## Outline
+
+1.  Background
+2.  Basics
+3.  Common situations
+
+## Why do it?
+
+1.  Researcher
+    -   Ensure useful results
+    -   Plan logistics
+2.  Higher degree committees
+    -   Assess feasibility
+    -   Usefulness of results
+3.  Funding agency
+    -   Value for money
+
+## Based on the research question
+
+-   Research questions/ objective
+    1.  Estimate a mean or percentage with a given precision - descriptive study.
+    2.  Identify the association between two variables/ difference between two groups - testing a hypothesis or analytical study. Difference between two means, difference between two percentages, a correlation coefficient etc.
+
+## Descriptive study
+
+-   Estimating population value based on sample findings
+-   Larger the sample size more precise estimate (narrower confidence interval)
+-   Larger the sample size higher confidence
+
+\
+
+-   Higher the variability larger sample size
+    -   Numeric variable - standard deviation\
+    -   Categorical variable - % closer to 50%
+
+## Descriptive study - Numeric outcome
+
+-   Required information
+    1.  Acceptable difference (d) half the width of the 95% Confidence Interval
+    2.  An estimate of the standard deviation (sd)
+
+N is the required sample size
+
+$$N = \frac{1.96^2 * sd^2}{d^2}$$
+
+## Descriptive study - Categorical outcome
+
+-   Required information
+    1.  Acceptable difference (d) half the width of the 95% Confidence Interval
+    2.  An estimate of the expected percentage (p)
+
+N is the required sample size
+
+$$N = \frac{1.96^2 * p(100-p)}{d^2}$$
+
+## Analytical Study
+
+-   Avoid type I error (declaring as significant by mistake)
+    -   p \< 0.05
+    -   p \< 0.01
+-   Ensure adequate power (detecting an association if it is there)
+    -   80%
+    -   90%
+
+## Analytical study - Numeric outcome {.scrollable}
+
+-   Required information
+    1.  Expected difference/ effect size (d)
+    2.  Estimate of the two standard deviations (sd~1~ and sd~2~)
+
+*n* is the required sample size **per group** (significance 0.05 & power 80%).
+
+$$n = \frac{(1.96 + 0.84)^2(sd_1^2 + sd_2^2)}{d^2}$$
+
+If significance 0.01 & power 90%) $$n = \frac{(2.58 + 1.28)^2(sd_1^2 + sd_2^2)}{d^2}$$
+
+## Analytical study - Categorical outcome
+
+-   Required information
+    1.  Expected difference/ effect size (p~1~ - p~2~)
+    2.  Estimate of the two percentages (p~1~ and p~2~)
+
+*n* is the required sample size **per group** (significance 0.05 & power 80%).
+
+$$n = \frac{(1.96 + 0.84)^2[(p_1(100- p_1) + p_2(100-p_2)]}{(p_1 - p_2)^2}$$
+
+## Sampling methods and sample size
+
+-   Modify calculation based on sampling method
+    -   Cluster samples result in larger standard errors
+    -   Unequal group sizes increase the total sample size
+
+## What if the sample size is fixed?
+
+-   Secondary data
+-   Feasibility
+-   Cost
+
+## Fixed sample size
+
+-   Indicate what is possible with that sample size
+    -   Expected confidence interval for a percentage
+-   Example
+    -   Available sample size is 1000
+    -   Expected 95% CI if the % is 1, 2.5, 5, 10, 25, 40 or 50
+
+## Expected confidence intervals
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+library(dplyr)
+library(Hmisc)
+library(gt)
+x <- c(10, 25, 50, 100, 250, 400, 500)
+n <- 1000
+a <- binconf(x, n)
+c <- a*100
+ct <- as_tibble(c)
+
+gt(ct) %>% 
+  fmt_number(
+    columns = 2:3,
+        decimals = 1
+  ) %>% 
+as_raw_html()
+
+```
+
+## Fixed sample size
+
+-   Analytical study
+    -   Calculate expected power for different scenarios
+-   Example
+    -   Available sample size is 1000
+    -   Equal number of exposed & unexposed
+    -   \% with outcome
+    -   10 & 15
+    -   10 & 20
+
+## Expected power
+
+| Size1 | Prev1 | Size2 | Prev2 | Power |
+|-------|-------|-------|-------|-------|
+| 500   | 10    | 500   | 15    | 63%   |
+| 500   | 10    | 500   | 20    | 96%   |
+| 900   | 10    | 100   | 20    | 81%   |
+
+[](https://www.openepi.com/Menu/OE_Menu.htm)
+
+## Power and sample size 
+(Sig = 0.05, P~1~ = 0.15 & p~2~ = 0.1)
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+
+library(pwr)
+p1 <- .15
+p2 <- .1
+h= 2*asin(sqrt(p1))-2*asin(sqrt(p2))
+p.2p <- pwr.2p.test(h=h,power = 0.8, sig.level=0.05,alternative="greater")
+plot(p.2p)
+
+```
+
+## Power and sample size 
+(Sig = 0.01, P~1~ = 0.15 & p~2~ = 0.1)
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+
+library(pwr)
+p1 <- .15
+p2 <- .1
+h= 2*asin(sqrt(p1))-2*asin(sqrt(p2))
+p.2p <- pwr.2p.test(h=h,power = 0.8, sig.level=0.01,alternative="greater")
+plot(p.2p)
+
+```
+
+
+## Power and sample size 
+(P~1~ = 0.5 & p~2~ = 0.42)
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+
+library(pwr)
+p1 <- .5
+p2 <- .42
+h= 2*asin(sqrt(p1))-2*asin(sqrt(p2))
+p.2p <- pwr.2p.test(h=h,power = 0.8, sig.level=0.05,alternative="greater")
+plot(p.2p)
+
+```
