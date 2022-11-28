@@ -4,7 +4,8 @@ author: "Prof A Pathmeswaran<br>pathmes@kln.ac.lk<br>2022-08-30"
 format: 
   revealjs:
    theme: "simple"
-   self-contained: true
+   embed-resources: true
+   standalone: true
 ---
 
 ## Outline
@@ -156,7 +157,6 @@ as_raw_html()
 | 500   | 10    | 500   | 20    | 96%   |
 | 900   | 10    | 100   | 20    | 81%   |
 
-
 [OpenEpi](https://www.openepi.com/Menu/OE_Menu.htm)
 
 ## Power and sample size
@@ -212,3 +212,14 @@ p.2p <- pwr.2p.test(h=h,power = 0.8, sig.level=0.05,alternative="greater")
 plot(p.2p)
 
 ```
+
+## Recap
+
+-   Background
+    -   Study designs
+    -   Standard error and confidence intervals
+    -   Significance and power
+-   Basic Sample size calculations
+-   Fixed sample size
+
+[Home](https://pathmes.quarto.pub/sample-size-calculation/)
