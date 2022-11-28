@@ -2,20 +2,29 @@ project:
   type: website
 
 website:
+  page-navigation: true
   title: "Sample Size Calculation"
   navbar:
     left:
       - href: index.qmd
       - ref.qmd
+      - text: "Slides"
+        menu:
+          - Sample_Size_GHRU.qmd
       - about.qmd
-
+      
 format:
   html:
-   theme:
-    light: flatly
-    dark: darkly
+    theme: 
+      light: flatly
+      dark: darkly
     css: styles.css
     toc: true
-
+    
 editor: visual
+
+
+theme:
+  light: flatly
+  dark: darkly
 
