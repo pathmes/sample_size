@@ -8,4 +8,4 @@ We need to decide on a sample size before we start collecting data for a researc
 A basic understanding of the ideas and concepts such as study designs, standard error, confidence interval, type 1 and type II error (or significance level and power) will make it easy to understand the ideas behind sample size calculation.
 
 \
-Sample size calculation becomes an easy process once you are clear about these concepts.  
+Sample size calculation becomes an easy process once you are clear about these concepts.
