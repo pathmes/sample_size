@@ -29,17 +29,17 @@ format:
 
 -   Research questions/ objective
     1.  Estimate a mean or percentage with a given precision - descriptive study.
-    2.  Identify the association between two variables/ difference between two groups - testing a hypothesis or analytical study. Difference between two means, difference between two percentages, a correlation coefficient etc.
+    2.  Identify the association between two variables/ difference between two groups - testing a hypothesis or analytical study. Difference between two means, the difference between two percentages, a correlation coefficient, etc.
 
 ## Descriptive study
 
 -   Estimating population value based on sample findings
--   Larger the sample size more precise estimate (narrower confidence interval)
--   Larger the sample size higher confidence
+-   The larger the sample size, the more precise the estimate (narrower confidence interval)
+-   The larger the sample size, the higher the confidence
 
 \
 
--   Higher the variability larger sample size
+-   The higher the variability, the larger the sample size
     -   Numeric variable - standard deviation\
     -   Categorical variable - % closer to 50%
 
@@ -96,7 +96,7 @@ $$n = \frac{(1.96 + 0.84)^2[(p_1(100- p_1) + p_2(100-p_2)]}{(p_1 - p_2)^2}$$
 
 ## Sampling methods and sample size
 
--   Modify calculation based on sampling method
+-   Modify calculation based on the sampling method
     -   Cluster samples result in larger standard errors
     -   Unequal group sizes increase the total sample size
 
@@ -111,7 +111,7 @@ $$n = \frac{(1.96 + 0.84)^2[(p_1(100- p_1) + p_2(100-p_2)]}{(p_1 - p_2)^2}$$
 -   Indicate what is possible with that sample size
     -   Expected confidence interval for a percentage
 -   Example
-    -   Available sample size is 1000
+    -   The available sample size is 1000
     -   Expected 95% CI if the % is 1, 2.5, 5, 10, 25, 40 or 50
 
 ## Expected confidence intervals
@@ -143,8 +143,8 @@ as_raw_html()
 -   Analytical study
     -   Calculate expected power for different scenarios
 -   Example
-    -   Available sample size is 1000
-    -   Equal number of exposed & unexposed
+    -   The available sample size is 1000
+    -   An equal number of exposed & unexposed
     -   \% with outcome
     -   10 & 15
     -   10 & 20
