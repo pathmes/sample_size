@@ -3,7 +3,7 @@ title: "Background Reading"
 bibliography: references.bib
 ---
 
-Most of these background reading materials are open access papers but access to some of them may require registration with the journal. 
+Most of these background reading materials are open access papers but access to some of them may require registration with the journal.
 
 ## Study Designs
 
@@ -11,19 +11,16 @@ We adopt an appropriate study design based on the objective of the research proj
 
 ## Standard Error
 
-We use samples to make inferences about populations.  The standard error is an indicator of the precision of whatever we estimate based on the findings in a sample. This very short paper by Altman and Bland explains *standard error* concisely [-@altman2005].
-
+We use samples to make inferences about populations. The standard error is an indicator of the precision of whatever we estimate based on the findings in a sample. This very short paper by Altman and Bland explains *standard error* concisely [-@altman2005].
 
 ## Confidence Interval
 
-We can be reasonably certain that the point estimate of a mean, percentage, odds ratio etc. based on a sample is likely to be close to the population value. The 95% confidence interval is the interval that is 95% likely to contain the population value.  This short paper by David Streiner is a good example of presenting important ideas using a relatively informal style [-@streiner2016].
+We can be reasonably certain that the point estimate of a mean, percentage, odds ratio etc. based on a sample is likely to be close to the population value. The 95% confidence interval is the interval that is 95% likely to contain the population value. This short paper by David Streiner is a good example of presenting important ideas using a relatively informal style [-@streiner2016].
 
 ## Type I Error, Type II Error, and Power
 
-A clear explanation of Type I error and Type II error is given in the first couple of pages of the paper titled "Sample Size and Power in Psychiatric Research" [@streiner1990].  There is a more recent paper by Streiner dealing with power [-@streiner2015]
-
+A clear explanation of Type I error and Type II error is given in the first couple of pages of the paper titled "Sample Size and Power in Psychiatric Research" [@streiner1990]. There is a more recent paper by Streiner dealing with power [-@streiner2015]
 
 ## Sample size and power
 
-The paper by Florey [-@florey1993] and the one by Campbell *et al* [-@campbell1995] provide very good general introduction to sample size calculation. 
-
+The paper by Florey [-@florey1993] and the one by Campbell *et al* [-@campbell1995] provide very good general introduction to sample size calculation.
