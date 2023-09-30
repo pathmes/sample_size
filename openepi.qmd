@@ -1,0 +1,23 @@
+---
+title: "Calculate with OpenEpi"
+---
+
+## OpenEpi
+
+OpenEpi is free and open source software for epidemiologic statistics. It can be accessed at the [OpenEpi website](https://www.openepi.com/Menu/OE_Menu.htm){target="_blank"} or downloaded and run without a web connection. A server is not required. The programs can be run in the browsers of many iPhone and Android cellphones and tablets.
+
+## Sample size for a descriptive study
+Researcher: I plan to do a cross-sectional study to determine smoking prevalence among adult men living in a Divisional Secretary area. Please tell me the sample size that will provide useful results. I know the results won't be useful if the sample size is too small, and I don't want to waste resources by collecting an unnecessarily large sample.  
+
+
+Statistician: The required sample size depends on several factors, but first, we'll decide about the two most important factors -  
+
+What is the expected prevalence?
+What is the 95% confidence interval that will be useful/acceptable?  
+Researcher:
+
+The prevalence of smoking among men has been reported as 20%. It could be slightly higher, say 25% or 30%, in this urban area.
+I would like the total width of the 95% confidence interval to be 5% or less. In other words, a lower limit of 2.5% below the point estimate and an upper limit of 2.5% above the point estimate would be acceptable.
+Statistician: This information is adequate to calculate sample size. OpenEpi is a useful online tool for many calculations, including sample size calculations used by epidemiologists. Click on this link and explore the features of OpenEpi.
+
+The next section explains the use of OpenEpi to calculate the sample size for this descriptive study.
