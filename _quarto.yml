@@ -11,6 +11,7 @@ website:
       - text: "Slides"
         menu:
           - Sample_Size_GHRU.qmd
+      - openepi.qmd
       - about.qmd
       
 format:
@@ -23,8 +24,4 @@ format:
     
 editor: visual
 
-
-theme:
-  light: flatly
-  dark: darkly
 
