@@ -2,22 +2,47 @@
 title: "Calculate with OpenEpi"
 ---
 
+The best way to learn sample size calculation is by doing. We can find the required sample size for a study by calculating using an appropriate formula or computer software, looking up the numbers in published tables of sample sizes, or using a web based sample size calculator. A web based calculator makes the task relatively easy and quick provided one knows how to use it. In this section we'll practice sample size calculations for some common situations using OpenEpi.
+
 ## OpenEpi
 
-OpenEpi is free and open source software for epidemiologic statistics. It can be accessed at the [OpenEpi website](https://www.openepi.com/Menu/OE_Menu.htm){target="_blank"} or downloaded and run without a web connection. A server is not required. The programs can be run in the browsers of many iPhone and Android cellphones and tablets.
+OpenEpi is a free and open-source software for epidemiologic statistics. It can be accessed at the [OpenEpi website](https://www.openepi.com/Menu/OE_Menu.htm){target="_blank"} or downloaded and run without a web connection. A server is not required. The programs can be run in the browsers of many iPhone and Android cell phones and tablets. Explore the website and become familiar with the different features available.\
+The main ideas behind the calculation of sample size for different study designs will be presented as a hypothetical conversation between a researcher and a statistician. This will be followed by instructions on how to use OpenEpi to calculate the sample size in a particular situation.
 
 ## Sample size for a descriptive study
-Researcher: I plan to do a cross-sectional study to determine smoking prevalence among adult men living in a Divisional Secretary area. Please tell me the sample size that will provide useful results. I know the results won't be useful if the sample size is too small, and I don't want to waste resources by collecting an unnecessarily large sample.  
 
+We use descriptive studies to determine the prevalence of a health condition (diabetes, hypertension, hearing impairment, cerebral palsy, etc.) or health related behaviour (level of physical activity, smoking, participating in health screening, etc.).
 
-Statistician: The required sample size depends on several factors, but first, we'll decide about the two most important factors -  
+**Researcher:** I plan to do a cross-sectional study to determine smoking prevalence among adult men living in a Divisional Secretary area. Please tell me the sample size that will provide useful results. I know the results won't be useful if the sample size is too small, and I don't want to waste resources by collecting an unnecessarily large sample.
 
-What is the expected prevalence?
-What is the 95% confidence interval that will be useful/acceptable?  
-Researcher:
+**Statistician:** The required sample size depends on several factors, but first, we'll decide about the two most important factors -
 
-The prevalence of smoking among men has been reported as 20%. It could be slightly higher, say 25% or 30%, in this urban area.
-I would like the total width of the 95% confidence interval to be 5% or less. In other words, a lower limit of 2.5% below the point estimate and an upper limit of 2.5% above the point estimate would be acceptable.
-Statistician: This information is adequate to calculate sample size. OpenEpi is a useful online tool for many calculations, including sample size calculations used by epidemiologists. Click on this link and explore the features of OpenEpi.
+1.  What is the expected prevalence?
+2.  What is the 95% confidence interval that will be useful/acceptable?
 
-The next section explains the use of OpenEpi to calculate the sample size for this descriptive study.
+**Researcher:**The prevalence of smoking among men has been reported as 20%. It could be slightly higher, say 25% or 30%, in this urban area. I want the total width of the 95% confidence interval to be 5% or less. In other words, a lower limit of 2.5% below the point estimate and an upper limit of 2.5% above the point estimate would be acceptable.
+
+**Statistician:** This information is adequate to calculate sample size. I'll demonstrate the use of OpenEpi to calculate the required sample size. Click on this link and access OpenEpi in your browser.
+
+The following section explains the use of OpenEpi to calculate the sample size for this descriptive study.
+
+1.  Go to [OpenEpi](https://www.openepi.com/Menu/OE_Menu.htm){target="_blank"}
+
+\
+![OpenEpi Homepage](figures/oe_ss_1.png)
+
+2. Select the sample size for proportion module
+
+\
+![OpenEpi Sidebar](figures/oe_ss_2.png)
+3. Open the interactive calculator  
+
+\
+![Sample size calculator](figures/oe_ss_3.png)
+4. Calculate sample size to determine a percentage
+
+\
+![OpenEpi HomepageInteractive calculator](figures/oe_ss_4.png)
+
+\
+Click the calculate button at the top after entering the "Anticipated frequency (%)" and the "Confidence limits"
