@@ -6,6 +6,7 @@ format:
    theme: "simple"
    embed-resources: true
    standalone: true
+   footer: "[Back to Sample Size Calculation Homepage](https://pathmes.quarto.pub/sample-size-calculation/)"
 ---
 
 ## Outline
@@ -221,5 +222,3 @@ plot(p.2p)
     -   Significance and power
 -   Basic Sample size calculations
 -   Fixed sample size
-
-[Home](https://pathmes.quarto.pub/sample-size-calculation/)
