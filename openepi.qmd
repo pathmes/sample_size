@@ -22,8 +22,8 @@ We use descriptive studies to determine the prevalence of a health condition (di
 
 **Researcher:**The prevalence of smoking among men has been reported as 20%. It could be slightly higher, say 25% or 30%, in this urban area. I want the total width of the 95% confidence interval to be 5% or less. In other words, a lower limit of 2.5% below the point estimate and an upper limit of 2.5% above the point estimate would be acceptable.
 
-**Statistician:** This information is adequate to calculate sample size. I'll demonstrate the use of OpenEpi to calculate the required sample size. Click on this link and access OpenEpi in your browser.
-
+**Statistician:** This information is adequate to calculate sample size. I'll demonstrate the use of OpenEpi to calculate the required sample size. 
+\
 The following section explains the use of OpenEpi to calculate the sample size for this descriptive study.
 
 1.  Go to [OpenEpi](https://www.openepi.com/Menu/OE_Menu.htm){target="_blank"}
@@ -31,18 +31,59 @@ The following section explains the use of OpenEpi to calculate the sample size f
 \
 ![OpenEpi Homepage](figures/oe_ss_1.png)
 
-2. Select the sample size for proportion module
+2.  Select the sample size for proportion module
 
 \
 ![OpenEpi Sidebar](figures/oe_ss_2.png)
-3. Open the interactive calculator  
+
+3.  Open the interactive calculator
 
 \
 ![Sample size calculator](figures/oe_ss_3.png)
-4. Calculate sample size to determine a percentage
+
+4.  Calculate sample size to determine a percentage
 
 \
-![OpenEpi HomepageInteractive calculator](figures/oe_ss_4.png)
+![OpenEpi Interactive calculator](figures/oe_ss_4.png)
 
 \
 Click the calculate button at the top after entering the "Anticipated frequency (%)" and the "Confidence limits"
+
+### Example Descriptive Study
+
+In our example, the "Anticipated %" is 25% and "Confidence limits as ..." or "Absolute precision" is 2.5%. Enter 25 and 2.5 in the appropriate boxes and click the "Calculate" button above the grey box.
+
+\
+![OpenEpi Interactive calculator](figures/oe_ss_5.png)
+
+Results of the calculation -
+
+![OpenEpi output](figures/oe_ss_6.png)
+
+------------------------------------------------------------------------
+
+-   Try different combinations of the expected prevalence and acceptable difference (absolute precision).
+-   What happens to the sample size as the expected prevalence increases if you keep the acceptable difference unchanged?
+-   What happens to the sample size as the acceptable difference increases if you keep the expected prevalence unchanged?
+-   Can you identify different combinations of expected prevalence and acceptable difference that will require almost the same sample size?  
+
+
+## Sample size for an analytical study
+
+Analytical studies can be case-control, cohort or cross sectional. The exact steps in calculating the sample sizes for these studies differ but the underlying mechanism is the same - we are trying to identify differences between two groups.
+
+\
+
+We'll start with a conversation between a researcher and a statistician as with the previous example.  
+
+**Researcher:** I would like to expand the smoking prevalence study as a cross sectional analytical study. I suspect that there is some difference in the prevalence of smoking between urban areas and rural areas. I would like to take samples of men from an urban area and a rural area and compare the prevalence. Can you tell me how to calculate the sample size for this study?  
+**Statistician:** The sample size will depend on the expected prevalence in the two areas and the difference. In addition, we have to decide on the *significance level* (also called the p-value, usually 0.05 - this means that there is a less than 5% chance that we'll wrongly conclude that the prevalence is different in the two areas, when there is no difference in the prevalence) and *power* (usually 80% - this means that there is 80% chance that we'll be able to conclude that there is difference in the prevalence if there is a difference between the prevalence in the two areas that is as big as we expected).  
+**Researcher:** The prevalence of smoking in rural areas is expected to be about 20% and I suspect that the prevalence in the urban area will be 30%. I am happy with the significance levle of 0.05 and power of 80%.  
+**Statistician:** This information is adequate to calculate sample size. I'll demonstrate the use of OpenEpi to calculate the required sample size. Click on this link and access OpenEpi in your browser.  
+
+\
+The following section explains the use of OpenEpi to calculate the sample size for this analytical study.
+
+1.  Go to [OpenEpi](https://www.openepi.com/SampleSize/SSCohort.htm){target="_blank"} and select the sample size for Cohort/RCT module.
+
+
