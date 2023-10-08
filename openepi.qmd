@@ -6,7 +6,9 @@ The best way to learn sample size calculation is by doing. We can find the requi
 
 ## OpenEpi
 
-OpenEpi is a free and open-source software for epidemiologic statistics. It can be accessed at the [OpenEpi website](https://www.openepi.com/Menu/OE_Menu.htm){target="_blank"} or downloaded and run without a web connection. A server is not required. The programs can be run in the browsers of many iPhone and Android cell phones and tablets. Explore the website and become familiar with the different features available.\
+OpenEpi is a free and open-source software for epidemiologic statistics. It can be accessed at the [OpenEpi website](https://www.openepi.com/Menu/OE_Menu.htm){target="_blank"} or downloaded and run without a web connection. A server is not required. The programs can be run in the browsers of many iPhone and Android cell phones and tablets. Explore the website and become familiar with the different features available.
+
+\
 The main ideas behind the calculation of sample size for different study designs will be presented as a hypothetical conversation between a researcher and a statistician. This will be followed by instructions on how to use OpenEpi to calculate the sample size in a particular situation.
 
 ## Sample size for a descriptive study
@@ -22,7 +24,8 @@ We use descriptive studies to determine the prevalence of a health condition (di
 
 **Researcher:**The prevalence of smoking among men has been reported as 20%. It could be slightly higher, say 25% or 30%, in this urban area. I want the total width of the 95% confidence interval to be 5% or less. In other words, a lower limit of 2.5% below the point estimate and an upper limit of 2.5% above the point estimate would be acceptable.
 
-**Statistician:** This information is adequate to calculate sample size. I'll demonstrate the use of OpenEpi to calculate the required sample size. 
+**Statistician:** This information is adequate to calculate sample size. I'll demonstrate the use of OpenEpi to calculate the required sample size.
+
 \
 The following section explains the use of OpenEpi to calculate the sample size for this descriptive study.
 
@@ -58,22 +61,21 @@ In our example, the "Anticipated %" is 25% and "Confidence limits as ..." or "Ab
 
 Results of the calculation -
 
+\
 ![OpenEpi output](figures/oe_ss_6.png)
-  
-#### Justifying sample size in the protocol  
 
-Sample size should be justified in the protocol and the final report by providing the information used for the calculation. **The information provided should be adequate for a knowledgeable person to repeat the calculation.** One way of writing up the above calculation in the protocol would be - 
+#### Justifying sample size in the protocol
+
+Sample size should be justified in the protocol and the final report by providing the information used for the calculation. **The information provided should be adequate for a knowledgeable person to repeat the calculation.** One way of writing up the above calculation in the protocol would be -
 
 "We expected the smoking prevalence in the study population to be 25%. This is based on the previously published figure of 20% prevalence in the country (this should be supported by an appropriate reference) and our impression that the prevalence will be slightly higher in this area. A sample size of 1152 will be required to determine this prevalence to within 2.5% of the actual value with 95% confidence."
-
 
 ------------------------------------------------------------------------
 
 -   Try different combinations of the expected prevalence and acceptable difference (absolute precision).
 -   What happens to the sample size as the expected prevalence increases if you keep the acceptable difference unchanged?
 -   What happens to the sample size as the acceptable difference increases if you keep the expected prevalence unchanged?
--   Can you identify different combinations of expected prevalence and acceptable difference that will require almost the same sample size?  
-
+-   Can you identify different combinations of expected prevalence and acceptable difference that will require almost the same sample size?
 
 ## Sample size for an analytical study
 
@@ -81,16 +83,88 @@ Analytical studies can be case-control, cohort or cross sectional. The exact ste
 
 \
 
-We'll start with a conversation between a researcher and a statistician as with the previous example.  
+We'll start with a conversation between a researcher and a statistician as with the previous example.
 
-**Researcher:** I would like to expand the smoking prevalence study as a cross sectional analytical study. I suspect that there is some difference in the prevalence of smoking between urban areas and rural areas. I would like to take samples of men from an urban area and a rural area and compare the prevalence. Can you tell me how to calculate the sample size for this study?  
-**Statistician:** The sample size will depend on the expected prevalence in the two areas and the difference. In addition, we have to decide on the *significance level* (also called the p-value, usually 0.05 - this means that there is a less than 5% chance that we'll wrongly conclude that the prevalence is different in the two areas, when there is no difference in the prevalence) and *power* (usually 80% - this means that there is 80% chance that we'll be able to conclude that there is difference in the prevalence if there is a difference between the prevalence in the two areas that is as big as we expected).  
-**Researcher:** The prevalence of smoking in rural areas is expected to be about 20% and I suspect that the prevalence in the urban area will be 30%. I am happy with the significance levle of 0.05 and power of 80%.  
-**Statistician:** This information is adequate to calculate sample size. I'll demonstrate the use of OpenEpi to calculate the required sample size. Click on this link and access OpenEpi in your browser.  
+**Researcher:** I would like to expand the smoking prevalence study as a cross sectional analytical study. I suspect that there is some difference in the prevalence of smoking between urban areas and rural areas. I would like to take samples of men from an urban area and a rural area and compare the prevalence. Can you tell me how to calculate the sample size for this study?
+
+**Statistician:** The sample size will depend on the expected prevalence in the two areas and the difference. In addition, we have to decide on the *significance level* (also called the p-value, usually 0.05 - this means that there is a less than 5% chance that we'll wrongly conclude that the prevalence is different in the two areas, when there is no difference in the prevalence) and *power* (usually 80% - this means that there is 80% chance that we'll be able to conclude that there is difference in the prevalence if there is a difference between the prevalence in the two areas that is as big as we expected).
+
+**Researcher:** The prevalence of smoking in rural areas is expected to be about 20% and I suspect that the prevalence in the urban area will be 30%. I am happy with the significance level of 0.05 and power of 80%.
+
+**Statistician:** This information is adequate to calculate sample size. I'll demonstrate the use of OpenEpi to calculate the required sample size. Click on this link and access OpenEpi in your browser.
 
 \
-The following section explains the use of OpenEpi to calculate the sample size for this analytical study.
+The following section explains the use of OpenEpi to calculate the sample size for this analytical study. This section assumes that you have some familiarity with OpenEpi. Please go through the section on Sample size for a descriptive study if you have never used OpenEpi.
 
 1.  Go to [OpenEpi](https://www.openepi.com/SampleSize/SSCohort.htm){target="_blank"} and select the sample size for Cohort/RCT module.
 
+\
+![OpenEpi Sidebar](figures/oe_ss2_1.png)
 
+\
+![OpenEpi Interactive calculator](figures/oe_ss2_2.png)
+
+Insert 20 as prevalence 1 and 30 as prevalence 2 and click the **Calculate** button.
+
+Results of the calculation -
+
+\
+![OpenEpi output](figures/oe_ss2_3.png)
+
+ 
+
+#### Justifying sample size in the protocol
+
+"A sample size of 316 per group will have 80% power at 5% significance to demonstrate the difference between the prevalence of smoking in urban and rural areas if the prevalence in the two areas are 20% and 30%."\
+Note that all information required to repeat this sample size calculation is provided in this statement.
+
+## Justifying a fixed/ arbitrary sample size.
+
+As a researcher we may be faced with a situation where the sample size is fixed - We do not have the luxury of calculating the required sample size and recruit/enroll the necessary participants. We may have access to some secondary data (analysing data collected for some other purpose) or we may not have adequate time or resources. In a such a situation we can indicate what is possible with the available sample size.
+
+Imagine a situation where a descriptive study is being planned to determine the prevalence of something where the available/possible sample size is fixed. We could calculate the expected 95% confidence interval for the prevalence for different point estimates of the prevalence.
+
+-   Example
+    -   The available sample size is 200
+    -   Expected 95% CI if the % is 5, 10, 20, 25, 40, 50 or 60
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: false
+library(dplyr)
+library(Hmisc)
+library(gt)
+x <- c(10, 20, 40, 50, 80, 100, 120)
+n <- 200
+a <- binconf(x, n)
+c <- a*100
+ct <- as_tibble(c)
+
+gt(ct) %>% 
+  fmt_number(
+    columns = 2:3,
+        decimals = 1
+  ) %>% as_raw_html()
+
+```
+
+ 
+
+![The above calculation can be done in OpenEpi using the Proportion module under Counts](https://www.openepi.com/Proportion/Proportion.htm){target="_blank"}
+
+\
+![OpenEpi Sidebar](figures/oe_ss3_1.png)
+
+ \
+Enter the appropriate numerator for each expected prevalence you are interested in. With a fixed sample size (denominator) of 200 the numerator for a prevalence of 5% would be 10.
+
+\
+![OpenEpi Interactive calculator](figures/oe_ss3_2.png)  
+
+\  
+Results of the calculation -   
+
+  ![OpenEpi output](figures/oe_ss3_3.png)
+
+Repeat the process by changing the numerator and calculating the point estimate and the 95% confidence interval. When presenting the results of these calculations round the confidence limits to one decimal place.
