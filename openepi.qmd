@@ -59,6 +59,13 @@ In our example, the "Anticipated %" is 25% and "Confidence limits as ..." or "Ab
 Results of the calculation -
 
 ![OpenEpi output](figures/oe_ss_6.png)
+  
+#### Justifying sample size in the protocol  
+
+Sample size should be justified in the protocol and the final report by providing the information used for the calculation. **The information provided should be adequate for a knowledgeable person to repeat the calculation.** One way of writing up the above calculation in the protocol would be - 
+
+"We expected the smoking prevalence in the study population to be 25%. This is based on the previously published figure of 20% prevalence in the country (this should be supported by an appropriate reference) and our impression that the prevalence will be slightly higher in this area. A sample size of 1152 will be required to determine this prevalence to within 2.5% of the actual value with 95% confidence."
+
 
 ------------------------------------------------------------------------
 
