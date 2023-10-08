@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-I decided to put the resources I usually use to help resolve issues related to sample size calculation in one place so that I can find them easily and share with others! That was the motivation to start this but now I am trying trying to covert it to a standalone site to help others to calculate sample size for their project. I hope you find this useful. Feedback & suggestions welcome via email.
+I decided to put the resources I usually use to help resolve issues related to sample size calculation in one place so that I can find them easily and share with others! That was the motivation to start this but now I am trying to convert it to a standalone site to help others to calculate sample size for their project. I hope you find this useful. Feedback & suggestions welcome via email.
 
 ## Author: A Pathmeswaran
 
