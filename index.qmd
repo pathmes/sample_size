@@ -2,6 +2,8 @@
 title: "Introduction"
 ---
 
+Sample size calculation is one of the most frequent problems faced by students, early career researchers and senior academics undertaking research. In most situations this calculation is a fairly straight forward activity.
+
 We need to decide on a sample size before collecting data for a research project; otherwise, we will not know when to stop collecting data! We could either pick a number arbitrarily as the sample size or formally calculate it. An inadequate sample size will result in inconclusive results, and an unnecessarily large sample size wastes resources. Therefore, a formal sample size calculation is essential for almost all research projects.
 
 \
